@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        clickerScript:['clicker script', 'sans-serif'],
+        league:['league spartan', 'sans-serif'],
+
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+]
 }
